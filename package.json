@@ -1,0 +1,28 @@
+{
+  "name": "rating-component",
+  "version": "1.0.0",
+  "description": "A rating application built with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evavic44/rating-component.git"
+  },
+  "keywords": [
+    "rating",
+    "system",
+    "rating",
+    "web"
+  ],
+  "author": "Victor Eke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Evavic44/rating-component/issues"
+  },
+  "homepage": "https://github.com/Evavic44/rating-component#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

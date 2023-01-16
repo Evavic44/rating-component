@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:focus {
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1.2rem;
+}
+body h1 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+body p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.6;
+}
+
+.star,
+.count {
+  display: inline-block;
+  background: #35414d;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.display {
+  display: none !important;
+}
+
+#container {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 2rem;
+  border-radius: 30px;
+  width: 410px;
+  min-height: 400px;
+}
+#container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+#container .review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+#container .review .count {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 16px;
+}
+#container .review .count:focus {
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+#container .review .count:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+#container .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+#container .submit:hover, #container .submit:focus {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+#rated {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#rated img {
+  margin-top: 1rem;
+}
+#rated .rate-result {
+  color: hsl(25deg, 97%, 53%);
+  background: #35414d;
+  padding: 0.3rem 1rem 0.2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+#rated .text h1 {
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */
