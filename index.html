@@ -3,6 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OG:Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <title>Frontend Mentor | Interactive rating component</title>
+    <meta
+      name="title"
+      content="Frontend Mentor | Interactive rating component"
+    />
+    <meta
+      name="description"
+      content="An application for rating customer and company service level built by Victor Eke"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rating-eke.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Frontend Mentor | Interactive rating component"
+    />
+    <meta
+      property="og:description"
+      content="An application for rating customer and company service level built by Victor Eke"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/Evavic44/rating-component/raw/main/design/desktop-design.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta
+      property="twitter:card"
+      content="https://github.com/Evavic44/rating-component/raw/main/design/desktop-design.jpg"
+    />
+    <meta property="twitter:url" content="https://rating-eke.vercel.app/" />
+    <meta
+      property="twitter:title"
+      content="Frontend Mentor | Interactive rating component"
+    />
+    <meta
+      property="twitter:description"
+      content="An application for rating customer and company service level built by Victor Eke"
+    />
+    <meta
+      property="twitter:image"
+      content="https://github.com/Evavic44/rating-component/raw/main/design/desktop-design.jpg"
+    />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -47,7 +95,9 @@
           alt="Thank you illustration"
         />
 
-        <span class="rate-result">You selected 1 out of 5</span>
+        <p class="rate-result">
+          You selected <span id="rate">0</span> out of 5
+        </p>
 
         <div class="text">
           <h1>Thank You!</h1>
@@ -56,8 +106,10 @@
             more support, don't hesitate to get in touch!
           </p>
         </div>
+
+        <button id="back" class="submit">Back</button>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

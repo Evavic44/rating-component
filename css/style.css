@@ -112,9 +112,6 @@ body p {
   justify-content: center;
   text-align: center;
 }
-#rated img {
-  margin-top: 1rem;
-}
 #rated .rate-result {
   color: hsl(25deg, 97%, 53%);
   background: #35414d;
