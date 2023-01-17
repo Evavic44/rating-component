@@ -4,9 +4,10 @@
 $orange: hsl(25, 97%, 53%);
 $White: hsl(0, 0%, 100%);
 $LightGrey: hsl(217, 12%, 63%);
-$MediumGrey: hsl(216, 12%, 54%);
-$DarkBlue: hsl(213, 19%, 18%);
-$VeryDarkBlue: hsl(216, 12%, 8%);
+$MediumGrey: #7c8798;
+$MediumBlue: #262d37;
+$DarkBlue: #1c232d;
+$VeryDarkBlue: #141519;
 
 * {
   margin: 0;
@@ -73,7 +74,11 @@ button {
 }
 
 #container {
-  background-color: $DarkBlue;
+  background: $DarkBlue;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+
   padding: 2rem;
   border-radius: 30px;
   width: 410px;
@@ -118,6 +123,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 50px;
+    padding: 0.6rem 1rem 0.3rem;
     font-size: 1rem;
 
     &:hover,
@@ -141,7 +147,7 @@ button {
 
   .rate-result {
     color: $orange;
-    background: #35414d;
+    background: $MediumBlue;
     padding: 0.3rem 1rem 0.2rem;
     border-radius: 30px;
     font-size: 0.95rem;

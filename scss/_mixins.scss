@@ -6,7 +6,7 @@
 
 @mixin circle {
   @include dead-center;
-  background: #35414d;
+  background: $MediumBlue;
   padding: 1rem;
   border-radius: 50%;
 }
