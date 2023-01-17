@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import "mixins";
 
 $orange: hsl(25, 97%, 53%);
 $White: hsl(0, 0%, 100%);
@@ -11,24 +12,11 @@ $VeryDarkBlue: hsl(216, 12%, 8%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Overpass", sans-serif;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  transition: 0.2s ease-in-out;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  @include dead-center;
   height: 100vh;
   max-width: 450px;
   margin: 0 auto;
@@ -50,15 +38,34 @@ body {
   }
 }
 
-.star,
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.star {
+  @include dead-center;
+  @include circle;
+}
+
 .count {
-  display: inline-block;
-  background: #35414d;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 50%;
+  @include dead-center;
+  @include circle;
   width: 50px;
   height: 50px;
+
+  & {
+    @media (max-width: 400px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .display {
@@ -103,15 +110,12 @@ body {
   }
 
   .submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dead-center;
     background: $orange;
     color: $White;
     width: 100%;
     height: 45px;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 2px;
     border-radius: 50px;
     font-size: 1rem;
@@ -122,13 +126,17 @@ body {
       color: $orange;
     }
   }
+
+  & {
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
 }
 
 #rated {
-  display: flex;
+  @include dead-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 
   .rate-result {

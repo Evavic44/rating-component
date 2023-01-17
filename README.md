@@ -9,7 +9,7 @@ This project is using SASS NPM version `1.57.1`, follow the guide below to get i
 ```js
 npm install -g sass
 
-sass --watch style.scss:css/style.css
+sass --watch scss:css
 ```
 
 ### The challenge
